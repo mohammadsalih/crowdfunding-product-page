@@ -1,0 +1,140 @@
+/* ********************************************/
+/* below 960px */
+/* ********************************************/
+@media screen and (max-width: 68.75em) {
+  /* mobile navigation style  */
+  .header-logo {
+    /* position: absolute;
+    z-index: 10; */
+  }
+  .main-nav {
+    position: absolute;
+    z-index: 10;
+
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    background-color: #fff;
+    color: var(--tin);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    border-radius: 11px;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+      visibility 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  .main-nav-background {
+    position: fixed;
+    z-index: 9;
+
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: opacity 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+      visibility 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .main-nav-item:not(:last-child) {
+    width: 100%;
+
+    border-bottom: 1px solid #ebebeb;
+  }
+  .main-nav-link {
+    padding: 2.4rem 3.2rem;
+
+    color: var(--shade);
+  }
+  .menu {
+    display: block;
+
+    position: relative;
+    z-index: 10;
+  }
+  /* mobile navigation style open*/
+  .nav-open .main-nav,
+  .nav-open .main-nav-background {
+    opacity: 100;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
+/* ********************************************/
+/* below 600px */
+/* ********************************************/
+@media screen and (max-width: 42.5em) {
+  html {
+    font-size: 55%;
+  }
+  /* boxes styling */
+  .box {
+    padding: 2.4rem;
+  }
+  /* first box that contain the image styling */
+  .box:first-child {
+    padding-top: 4.8rem;
+  }
+
+  /* btn styling */
+  .btn {
+    padding: 1.6rem 1.8rem;
+  }
+  /* bookmark btn styling */
+  .bookmark p {
+    padding: 0 1.8rem;
+    font-weight: 500;
+  }
+  /* grid styling */
+  .grid-three-cal {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* number box styling */
+  .number-box:not(:last-child) {
+    margin: 0 9rem;
+    border: none;
+    border-bottom: 2px solid #f4f4f4;
+  }
+  /* card mobile styling */
+  .card .flex-two-cal:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* pay project cards */
+  .pay-detays-p {
+    margin-bottom: 2.4rem;
+    padding: 0;
+  }
+  .quantitie-desktop {
+    display: none;
+  }
+  .pay-title-holder {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .quantitie-mobile {
+    display: inline-block;
+  }
+  .pay-price .flex-two-cal {
+    flex-direction: column;
+  }
+}

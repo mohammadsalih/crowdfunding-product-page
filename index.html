@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- google font link -->
+    <!-- ----------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ----------------- -->
+
+    <!-- css styling links -->
+    <!-- ----------------- -->
+    <!-- style sheed link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media querys link -->
+    <link rel="stylesheet" href="css/querys.css" />
+    <!-- ----------------- -->
+
+    <title>MOS | Crowdfunding product page</title>
+  </head>
+  <body>
+    <section class="hero-section">
+      <header class="header">
+        <img
+          src="images/logo.svg"
+          alt="our company logo"
+          class="header-logo"
+        />
+
+        <nav class="nav">
+          <div class="main-nav-background"></div>
+
+          <ul class="main-nav">
+            <li class="main-nav-item">
+              <a class="main-nav-link">About</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link">Discover</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link">Get Started</a>
+            </li>
+          </ul>
+          <div class="menu" onclick="openNav()">
+            <ion-icon
+              name="menu-outline"
+              class="menu-icon menu-icon-active"
+            ></ion-icon>
+            <ion-icon
+              name="close-outline"
+              class="menu-icon"
+            ></ion-icon>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <main>
+      <div class="container">
+        <section class="section-project box">
+          <img
+            src="images/logo-mastercraft.svg"
+            alt=""
+            class="project-img"
+          />
+
+          <div class="project-details">
+            <h1>Mastercraft Bamboo Monitor Riser</h1>
+            <p>
+              A beautiful & handcrafted monitor stand to reduce neck
+              and eye strain.
+            </p>
+          </div>
+
+          <div class="flex-two-cal">
+            <a class="btn btn-bledge"> Back this project</a>
+
+            <a onclick="openBookMark()" class="bookmark">
+              <div class="bookmark-icon">
+                <ion-icon name="bookmark-outline"></ion-icon>
+              </div>
+              <p>Bookmark</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-numbers box">
+          <div class="grid grid-three-cal numbers">
+            <div class="number-box">
+              <p class="number">$89,914</p>
+              <p>of $100,000 backed</p>
+            </div>
+
+            <div class="number-box">
+              <p class="number">5,007</p>
+              <p>total backers</p>
+            </div>
+
+            <div class="number-box">
+              <p class="number">56</p>
+              <p>days left</p>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </section>
+
+        <section class="section-about box">
+          <h2 class="section-title">About this project</h2>
+          <div class="section-description">
+            <p>
+              The Mastercraft Bamboo Monitor Riser is a sturdy and
+              stylish platform that elevates your screen to a more
+              comfortable viewing height. Placing your monitor at eye
+              level has the potential to improve your posture and make
+              you more comfortable while at work, helping you stay
+              focused on the task at hand.
+            </p>
+
+            <p>
+              Featuring artisan craftsmanship, the simplicity of
+              design creates extra desk space below your computer to
+              allow notepads, pens, and USB sticks to be stored under
+              the stand.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="flex-two-cal">
+              <h3>Bamboo Stand</h3>
+              <p class="price">Pledge $25 or more</p>
+            </div>
+            <p>
+              You get an ergonomic stand made of natural bamboo.
+              You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.
+            </p>
+            <div class="flex-two-cal">
+              <p class="quantitie quantitie-big">
+                101 <span>left</span>
+              </p>
+
+              <a class="btn btn-bledge"> Select Reward</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex-two-cal">
+              <h3>Black Edition Stand</h3>
+              <p class="price">Pledge $75 or more</p>
+            </div>
+            <p>
+              You get a Black Special Edition computer stand and a
+              personal thank you. You’ll be added to our Backer member
+              list. Shipping is included.
+            </p>
+            <div class="flex-two-cal">
+              <p class="quantitie quantitie-big">
+                64 <span>left</span>
+              </p>
+
+              <a class="btn btn-bledge"> Select Reward</a>
+            </div>
+          </div>
+
+          <div class="card out-of-stock">
+            <div class="flex-two-cal">
+              <h3>Mahogany Special Edition</h3>
+              <p class="price">Pledge $200 or more</p>
+            </div>
+            <p>
+              You get two Special Edition Mahogany stands, a Backer
+              T-Shirt, and a personal thank you. You’ll be added to
+              our Backer member list. Shipping is included.
+            </p>
+            <div class="flex-two-cal">
+              <p class="quantitie quantitie-big">
+                0 <span>left</span>
+              </p>
+
+              <a> out of stock</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="overlay success">
+      <div class="container success-container">
+        <div class="box success-box">
+          <img src="images/icon-check.svg" alt="success icon" />
+          <div class="success-text">
+            <h2>Thanks for your support!</h2>
+            <p>
+              Your pledge brings us one step closer to sharing
+              Mastercraft Bamboo Monitor Riser worldwide. You will get
+              an email once our campaign is completed. Got it!
+            </p>
+          </div>
+          <a class="btn success-btn" onclick="openSuccess()">
+            Got it!</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay back-project">
+      <div class="container">
+        <div class="box">
+          <ion-icon
+            name="close-outline"
+            class="box-icon"
+            onclick="openBackPoject()"
+          ></ion-icon>
+          <h2>back this project</h2>
+          <p>
+            Want to support us in bringing Mastercraft Bamboo Monitor
+            Riser out in the world?
+          </p>
+
+          <div class="pay-box">
+            <div class="pay-detays pay-div">
+              <div class="flex-two-cal">
+                <div class="pay-title">
+                  <label class="radio-container"
+                    ><input
+                      type="radio"
+                      id="radio1"
+                      name="group1"
+                      group="group1"
+                      class="radio"
+                  /></label>
+
+                  <div class="pay-title-holder">
+                    <h3>Pledge with no reward</h3>
+                  </div>
+                </div>
+              </div>
+
+              <p class="pay-detays-p">
+                Choose to support us without a reward if you simply
+                believe in our project. As a backer, you will be
+                signed up to receive product updates via email.
+              </p>
+            </div>
+
+            <div class="pay-price pay-div">
+              <div class="flex-two-cal">
+                <p>pleace continue</p>
+                <div class="submit-amount">
+                  <a class="btn btn-continue">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-box">
+            <div class="pay-detays pay-div">
+              <div class="flex-two-cal">
+                <div class="pay-title">
+                  <label class="radio-container"
+                    ><input
+                      type="radio"
+                      id="radio1"
+                      name="group2"
+                      group="group1"
+                      class="radio"
+                  /></label>
+
+                  <div class="pay-title-holder">
+                    <h3>Bamboo Stand</h3>
+
+                    <p class="price">Pledge $25 or more</p>
+                  </div>
+                </div>
+
+                <p
+                  class="quantitie quantitie-small quantitie-desktop"
+                >
+                  101 <span>left</span>
+                </p>
+              </div>
+
+              <p class="pay-detays-p">
+                You get an ergonomic stand made of natural bamboo.
+                You've helped us launch our promotional campaign, and
+                you’ll be added to a special Backer member list.
+              </p>
+
+              <p class="quantitie quantitie-small quantitie-mobile">
+                101 <span>left</span>
+              </p>
+            </div>
+
+            <div class="pay-price pay-div">
+              <div class="flex-two-cal">
+                <p>Enter your pledge</p>
+                <div class="submit-amount">
+                  <div class="price-input-holder">
+                    <p>$</p>
+                    <input type="number" class="price-input" />
+                  </div>
+                  <a class="btn btn-continue">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-box">
+            <div class="pay-detays pay-div">
+              <div class="flex-two-cal">
+                <div class="pay-title">
+                  <label class="radio-container"
+                    ><input
+                      type="radio"
+                      id="radio1"
+                      name="group3"
+                      group="group1"
+                      class="radio"
+                  /></label>
+
+                  <div class="pay-title-holder">
+                    <h3>Black Edition Stand</h3>
+
+                    <p class="price">Pledge $75 or more</p>
+                  </div>
+                </div>
+
+                <p
+                  class="quantitie quantitie-small quantitie-desktop"
+                >
+                  64 <span>left</span>
+                </p>
+              </div>
+
+              <p class="pay-detays-p">
+                You get a Black Special Edition computer stand and a
+                personal thank you. You’ll be added to our Backer
+                member list.
+              </p>
+
+              <p class="quantitie quantitie-small quantitie-mobile">
+                64 <span>left</span>
+              </p>
+            </div>
+
+            <div class="pay-price pay-div">
+              <div class="flex-two-cal">
+                <p>Enter your pledge</p>
+                <div class="submit-amount">
+                  <div class="price-input-holder">
+                    <p>$</p>
+                    <input type="number" class="price-input" />
+                  </div>
+                  <a class="btn btn-continue">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-box out-of-stock">
+            <div class="pay-detays pay-div">
+              <div class="flex-two-cal">
+                <div class="pay-title">
+                  <label class="radio-container"
+                    ><input
+                      type="radio"
+                      id="radio1"
+                      name="group4"
+                      group="group1"
+                      class="radio"
+                  /></label>
+
+                  <div class="pay-title-holder">
+                    <h3>Mahogany Special Edition</h3>
+
+                    <p class="price">Pledge $200 or more</p>
+                  </div>
+                </div>
+
+                <p
+                  class="quantitie quantitie-small quantitie-desktop"
+                >
+                  0 <span>left</span>
+                </p>
+              </div>
+
+              <p class="pay-detays-p">
+                You get two Special Edition Mahogany stands, a Backer
+                T-Shirt, and a personal thank you. You’ll be added to
+                our Backer member list. Shipping is included.
+              </p>
+
+              <p class="quantitie quantitie-small quantitie-mobile">
+                0 <span>left</span>
+              </p>
+            </div>
+
+            <div class="pay-price pay-div">
+              <div class="flex-two-cal">
+                <p>Enter your pledge</p>
+                <div class="submit-amount">
+                  <div class="price-input-holder">
+                    <p>$</p>
+                    <input type="number" class="price-input" />
+                  </div>
+                  <a class="btn btn-continue">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <!-- ----------------- -->
+    <script src="JavaScript/script.js"></script>
+    <!-- ion icons script files -->
+    <!-- ----------------- -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- ----------------- -->
+  </body>
+</html>
